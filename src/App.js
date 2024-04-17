@@ -4,11 +4,20 @@ import ComponentOne from './ComponentOne';
 import ComponentTwo from './ComponentTwo';
 
 function App() {
+  
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'space-around', 
+    padding: '10px'
+  };
+
   return (
     <div>
       <Header />
-      <ComponentOne />
-      <ComponentTwo />
+      <div style={containerStyle}>
+        <ComponentOne />
+        <ComponentTwo />
+      </div>
     </div>
   );
 }
