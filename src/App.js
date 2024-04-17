@@ -8,7 +8,7 @@ function App() {
   const containerStyle = {
     display: 'flex',
     justifyContent: 'space-around', 
-    padding: '10px'
+    padding: '100px'
   };
 
   return (
