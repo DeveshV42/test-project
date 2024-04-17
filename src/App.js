@@ -1,22 +1,16 @@
 import React from 'react';
+import './App.css'; 
 import Header from './Header';
 import ComponentOne from './ComponentOne';
 import ComponentTwo from './ComponentTwo';
 
 function App() {
-  
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'space-around', 
-    padding: '100px'
-  };
-
   return (
     <div>
       <Header />
-      <div style={containerStyle}>
-        <ComponentOne />
-        <ComponentTwo />
+      <div className="container">
+        <ComponentOne className="component" />
+        <ComponentTwo className="component" />
       </div>
     </div>
   );
